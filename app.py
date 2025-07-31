@@ -1,6 +1,4 @@
 
-# "C:\Program Files\Python310\python.exe" -m streamlit run app.py
-
 
 import streamlit as st
 import tensorflow as tf
