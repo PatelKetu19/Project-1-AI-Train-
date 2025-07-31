@@ -1,5 +1,5 @@
-streamlit >= 1.26.0
+streamlit == 1.26.0
 tensorflow == 2.12.1
-protobut >= 3.20.3
+protobut == 3.20.3
 Pillow
 numpy
