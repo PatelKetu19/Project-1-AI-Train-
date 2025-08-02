@@ -30,7 +30,8 @@ if option == "📁 Upload Image":
     if uploaded_file is not None:
         try:
             # Convert uploaded image to PIL
-            bytes_data = uploaded_file.read()
+            #bytes_data = uploaded_file.read()
+            uploaded_file.seek(0)
             image = Image.open(io.BytesIO(bytes_data)).convert("RGB")
             st.image(image, caption="Uploaded Image", use_column_width=True)
         except Exception as e:
@@ -62,3 +63,4 @@ if image is not None and st.button("Get Result"):
 
     st.success(f"✅ **Prediction:** {label}")
     st.info(f"🔍 **Confidence:** {confidence:.2f}%")
+
